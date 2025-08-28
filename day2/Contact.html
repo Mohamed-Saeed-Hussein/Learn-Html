@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Restaurant</title>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="Restaurant Music.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Fill out the form below.</p>
+
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="50"
+        placeholder="Your full name"
+      /><br /><br />
+
+      <!-- Email -->
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="example@email.com"
+      /><br /><br />
+
+      <!-- Phone -->
+      <label for="phone">Phone:</label><br />
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        required
+        pattern="[0-9]{10}"
+        placeholder="+20"
+      />
+      <small>Format: 10 digits only</small><br /><br />
+
+      <!-- Message -->
+      <label for="message">Message:</label><br />
+      <textarea
+        id="message"
+        name="message"
+        required
+        minlength="10"
+        maxlength="500"
+        placeholder="Your message"
+      ></textarea
+      ><br /><br />
+
+      <button type="submit">Send Message</button>
+    </form>
+  </body>
+</html>
